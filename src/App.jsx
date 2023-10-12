@@ -126,11 +126,11 @@ function App() {
   ];
 
   const hobbies = [
-    'Badminton',
-    'Fitness',
-    'Skiing',
-    'Poker',
-    'Reading',
+    '足球',
+    '羽毛球',
+    '游泳',
+    'Genshin Impact',
+    'Honkai: Star Rail',
   ];
 
   const Interests = [
@@ -156,8 +156,8 @@ function App() {
               <div className='flex flex-row justify-center mt-4'>
                 <a href={personalInfo.googleScholar} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_google_scholar} alt='scholar'/></a>
                 <a href={personalInfo.github} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_github} alt='github'/></a>
-                <a href={personalInfo.twitter} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_twitter} alt='twitter'/></a>
-                {/* <a href={personalInfo.csdn} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_csdn} alt='csdn'/></a> */}
+                {/* <a href={personalInfo.twitter} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_twitter} alt='twitter'/></a>*/}
+                <a href={personalInfo.csdn} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_csdn} alt='csdn'/></a>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ function App() {
               ))}
             </div>
           </div>
-{/* 
+
           <div>
             <h2 className="text-lg font-bold">兴趣爱好</h2>
             <div className='grid grid-cols-2 gap-4'>
@@ -178,7 +178,7 @@ function App() {
                 <div className="bg-zinc-300 p-2 rounded-md shadow-xl text-center overflow-hidden hover:bg-primary">{hobby}</div>
               ))}
             </div>
-          </div> */}
+          </div>
 
         </div>
 
