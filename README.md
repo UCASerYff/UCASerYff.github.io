@@ -16,4 +16,7 @@
 
 4. 更新步骤
     1. 修改并push
+        1.1 git add *
+        1.2 git commit -m 'com'
+        1.3 git push
     2. npm run deploy

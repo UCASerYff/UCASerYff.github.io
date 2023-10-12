@@ -16,10 +16,10 @@ function App() {
     contact: 'yufeifan23@mails.ucas.ac.cn',
     location: '浙江 中国',
     school: '中国科学院大学',
-    github: 'https://github.com/xxx',
-    twitter: 'https://twitter.com/xxx',
-    csdn: 'https://blog.csdn.net/xxx',
-    googleScholar: 'https://scholar.google.com/citations?user=xxx&hl=en',
+    github: 'https://github.com/UCASerYff',
+    //twitter: 'https://twitter.com/xxx',
+    csdn: 'https://blog.csdn.net/zxcjdsb?spm=1000.2115.3001.5343',
+    googleScholar: 'https://scholar.google.com/citations?hl=zh-CN&pli=1&user=VXT8Uv4AAAAJ',
 
   };
 
@@ -29,6 +29,9 @@ function App() {
   ];
 
   const honors = [
+    '2023 年 09 月：获人工智能应用管理师NTC 职业技能证书',
+    '2023 年 08 月：获MATLAB 软件应用工程师技能证书',
+    '2023 年 08 月：任中国人工智能学会学生会员',
     '2023 年 05 月：美国大学生数学建模竞赛Honorable Mention',
     '2023 年 04 月：“互联网+”大学生创新创业大赛 国银奖',
     '2022 年 12 月：获浙江省政府奖学金',
@@ -71,8 +74,8 @@ function App() {
   const papers = [
     '[1] Gao X, Yu F. Research on National Education System Based on Bayesian Back Propagation[C]//2021 International Conference on Education, Information Management and Service Science (EIMSS). IEEE, 2021: 244-248.',
     '[2] Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS[J]. Frontiers in Psychology, 2023, 14: 1152333.',
-    '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction. (CISC2023录用)',
-    '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An improved path planning algorithm based on improving initial solution and fast convergence. (CISC2023录用)',
+    '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction. (CISC2023见刊)',
+    '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An improved path planning algorithm based on improving initial solution and fast convergence. (CISC2023见刊)',
     '[5] 虞非凡, 陈新民, 王继强 等.基于前景理论概率语言组合TOPSIS综合评价方法的沿海省份航空产业评价. (在投)',
     '[6] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States. (ICANDVC2023录用)',
     '[7] Xu F, Qiu J, Chen X, Lin Y, Yu F. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC. (ICANDVC2023录用)',
@@ -117,12 +120,9 @@ function App() {
     },
     {
       title: '2020年9月至2021年6月，宁波大学机械工程与力学学院，浙江',
-      description: "研究内容：参与汽车发动机轴瓦及其涂料研究。研究指导人：曹均。参与成果：参加多次大挑、小挑和互联网+竞赛，参与发表5项专利（涵公开），3项软件著作权",
+      description: "研究内容：参与汽车发动机轴瓦及其涂料研究。研究指导人：曹均。参与成果：参加多次大挑、小挑和互联网+竞赛，参与发表多项专利（含公开）",
     },
-    {
-      title: '2020年3月至2020年9月，宁波大学先进储能技术与装备研究院，浙江',
-      description: "研究内容：参与电池等储能器件的深度学习寿命预测。研究指导人：林文文。参与成果：参加多次数学建模竞赛，并参与发表一篇EI会议",
-    },
+
   ];
 
   const hobbies = [
