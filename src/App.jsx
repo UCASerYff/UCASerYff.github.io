@@ -76,9 +76,8 @@ function App() {
     '[2] Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS[J]. Frontiers in Psychology, 2023, 14: 1152333.',
     '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction. (CISC2023见刊)',
     '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An improved path planning algorithm based on improving initial solution and fast convergence. (CISC2023见刊)',
-    '[5] 虞非凡, 陈新民, 王继强 等.基于前景理论概率语言组合TOPSIS综合评价方法的沿海省份航空产业评价. (在投)',
-    '[6] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States. (ICANDVC2023录用)',
-    '[7] Xu F, Qiu J, Chen X, Lin Y, Yu F. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC. (ICANDVC2023录用)',
+    '[5] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States. (ICANDVC2023录用)',
+    '[6] Xu F, Qiu J, Chen X, Lin Y, Yu F. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC. (ICANDVC2023录用)',
   ];
 
   const patents = [
@@ -99,8 +98,12 @@ function App() {
       description: "研究内容：基于深度学习的无人机智能控制。研究指导人：王继强，陈新民，林跃",
     },
     {
+      title: '2023年10月至今，浙江特种飞行器工程中心，浙江',
+      description: "研究内容：濒海无人机应急指挥多模融合通信技术研究。研究指导人：王继强，陈新民，林跃。研究成果：产出中",
+    },
+    {
       title: '2023年9月至今，浙江特种飞行器工程中心，浙江',
-      description: "研究内容：高海情背景下的基于深度学习的无人机自主着舰技术。研究指导人：王继强，陈新民，林跃。研究成果：利用LSTM预测三个维度下的在高海情下的舰船甲板运动，并参与控制方向理论研究，产出2篇EI会议",
+      description: "研究内容：濒海无人机高海情着舰导航控制技术。研究指导人：王继强，陈新民，林跃。研究成果：产出中",
     },
     {
       title: '2022年12月至2023年8月，中国科学院大学科创计划项目，浙江',
