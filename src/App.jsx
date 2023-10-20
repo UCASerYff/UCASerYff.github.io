@@ -32,11 +32,8 @@ function App() {
     '2023 年 09 月：获人工智能应用管理师NTC 职业技能证书',
     '2023 年 08 月：获MATLAB 软件应用工程师技能证书',
     '2023 年 08 月：任中国人工智能学会学生会员',
-    '2023 年 05 月：美国大学生数学建模竞赛Honorable Mention',
     '2023 年 04 月：“互联网+”大学生创新创业大赛 国银奖',
     '2022 年 12 月：获浙江省政府奖学金',
-    '2022 年 07 月：“互联网+”大学生创新创业大赛 浙江省金奖',
-    '2022 年 07 月：“互联网+”大学生创新创业大赛 浙江省金钥匙奖',
     '2022 年 07 月：“挑战杯”中国大学生创业计划竞赛 浙江省铜奖',
     '2021 年 12 月：获浙江省政府奖学金',
     '2021 年 10 月：全国大学生数学建模竞赛 浙江省二等奖',
@@ -45,12 +42,8 @@ function App() {
     '2021 年 05 月：美国大学生数学建模竞赛Meritorious Winner',
     '2021 年 05 月：“挑战杯”大学生课外学术作品竞赛 浙江省一等奖',
     '2020 年 12 月：清华IE亮剑全国工业工程应用案例大赛 三等奖',
-    '2020 年 12 月：获宁波大学二等奖学金',
-    '2020 年 10 月：全国大学生数学建模竞赛 浙江省三等奖',
     '2020 年 10 月：担任“西门子”杯中国智能制造挑战赛 中国西部大使',
     '2020 年 10 月：担任“西门子”杯中国智能制造挑战赛 校园大使',
-    '2020 年 06 月：获宁波大学阳明才能奖学金',
-    '2020 年 05 月：美国大学生数学建模竞赛Successful Participant',
   ];
 
 
@@ -74,8 +67,8 @@ function App() {
   const papers = [
     '[1] Gao X, Yu F. Research on National Education System Based on Bayesian Back Propagation[C]//2021 International Conference on Education, Information Management and Service Science (EIMSS). IEEE, 2021: 244-248.',
     '[2] Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS[J]. Frontiers in Psychology, 2023, 14: 1152333.',
-    '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction. (CISC2023见刊)',
-    '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An improved path planning algorithm based on improving initial solution and fast convergence. (CISC2023见刊)',
+    '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction[C]//Chinese Intelligent Systems Conference. Singapore: Springer Nature Singapore, 2023: 221-230.',
+    '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An Improved Path Planning Algorithm Based on Improving Initial Solution and Fast Convergence[C]//Chinese Intelligent Systems Conference. Singapore: Springer Nature Singapore, 2023: 17-26.',
     '[5] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States. (ICANDVC2023录用)',
     '[6] Xu F, Qiu J, Chen X, Lin Y, Yu F. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC. (ICANDVC2023录用)',
   ];
