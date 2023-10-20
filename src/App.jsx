@@ -47,22 +47,15 @@ function App() {
   ];
 
 
-  // const academicAchievements = [
-  //   {
-  //     title: 'Cross-head Supervision for Crowd Counting with Noisy Annotations, ICASSP 2023',
-  //     image: paper_pic_1,
-  //     description: 'To address the prevalent issue of label noise in crowd counting datasets, we propose a dual-branch network using convolutional and transformer modules for mutual supervision. This learning paradigm effectively provides supervision in noisy regions, leading to improved counting accuracy.',
-  //     paperLink: 'https://ieeexplore.ieee.org/document/10095636/',
-  //     code: 'https://github.com/RaccoonDML/CHSNet'
-  //   },
-  //   {
-  //     title: 'Adjustable Memory-efficient Image Super-resolution via Individual Kernel Sparsity, ACMMM 2022',
-  //     image: paper_pic_2,
-  //     description: "To abtain sparsed image super-resolution models, we introduce a dynamic threshold learning algorithm in which the threshold adaptively decays under the guidance of target sparsity. The proposed method can achieve parameter sparsity of 50% to 70% while maintaining the existing super-resolution model's accuracy.",
-  //     paperLink: 'https://dl.acm.org/doi/10.1145/3503161.3547768',
-  //     code: 'https://github.com/RaccoonDML/IKS'
-  //   },
-  // ];
+  const academicAchievements = [
+     {
+       title: 'Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS, Frontiers in Psychology',
+       image: paper_pic_1,
+       description: 'We develop an evaluation model of CPL based on prospect theory, probabilistic linguistic ordered weighted distance measure, and the TOPSIS method, wherein we use a probabilistic linguistic term set (PLTS) to describe the uncertainty and complexity of the assessment process.',
+       paperLink: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1152333/full',
+       //code: 'https://github.com/RaccoonDML/CHSNet'
+     },
+  ];
 
   const papers = [
     '[1] Gao X, Yu F. Research on National Education System Based on Bayesian Back Propagation[C]//2021 International Conference on Education, Information Management and Service Science (EIMSS). IEEE, 2021: 244-248.',
@@ -87,20 +80,12 @@ function App() {
 
   const projects = [
     {
-      title: '2023年9月至今，中国科学院大学，宁波材料技术与工程研究所，特种飞行器与系统工程团队，浙江',
-      description: "研究内容：基于深度学习的无人机智能控制。研究指导人：王继强，陈新民，林跃",
-    },
-    {
-      title: '2023年10月至今，浙江特种飞行器工程中心，浙江',
+      title: '2023年10月至今，中国科学院宁波材料技术与工程研究所，浙江特种飞行器工程中心，浙江',
       description: "国家级项目：濒海无人机应急指挥多模融合通信技术研究。研究指导人：王继强，陈新民，林跃。研究成果：产出中",
     },
     {
-      title: '2023年9月至今，浙江特种飞行器工程中心，浙江',
+      title: '2023年9月至今，中国科学院宁波材料技术与工程研究所，浙江特种飞行器工程中心，浙江',
       description: "省市级项目：濒海无人机高海情着舰导航控制技术。研究指导人：王继强，陈新民，林跃。研究成果：产出中",
-    },
-    {
-      title: '2022年10月至2023年8月，中国科学院大学，宁波材料技术与工程研究所，浙江',
-      description: "校级项目：中国科学院大学科创计划。研究指导人：王继强，陈新民，林跃",
     },
   ];
 
