@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import avatar from './assets/avatar.jpg'; // 使用require或import导入图片
-import paper_pic_1 from './assets/paper_pic_1.png';
+//import paper_pic_1 from './assets/paper_pic_1.png';
 // import paper_pic_2 from './assets/avatar.png';
 import img_github from './assets/github.svg';
 import img_twitter from './assets/twitter.svg';
@@ -47,15 +47,15 @@ function App() {
   ];
 
 
-  const academicAchievements = [
-     {
-       title: 'Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS, Frontiers in Psychology',
-       image: paper_pic_1,
-       description: 'We develop an evaluation model of CPL based on prospect theory, probabilistic linguistic ordered weighted distance measure, and the TOPSIS method, wherein we use a probabilistic linguistic term set (PLTS) to describe the uncertainty and complexity of the assessment process.',
-       paperLink: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1152333/full',
-       code: 'https://github.com/UCASerYff'
-     },
-  ];
+  // const academicAchievements = [
+  //    {
+  //      title: 'Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS, Frontiers in Psychology',
+  //      image: paper_pic_1,
+  //      description: 'We develop an evaluation model of CPL based on prospect theory, probabilistic linguistic ordered weighted distance measure, and the TOPSIS method, wherein we use a probabilistic linguistic term set (PLTS) to describe the uncertainty and complexity of the assessment process.',
+  //      paperLink: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1152333/full',
+  //      code: 'https://github.com/UCASerYff'
+  //    },
+  // ];
 
   const papers = [
     '[1] Gao X, Yu F. Research on National Education System Based on Bayesian Back Propagation[C]//2021 International Conference on Education, Information Management and Service Science (EIMSS). IEEE, 2021: 244-248.',
@@ -172,7 +172,7 @@ function App() {
               ))}
             </div>
 
-            <div className='text-xl pt-8 pb-2 font-bold'>发明专利</div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">申请专利</h2>
             <div className="grid grid-cols-1 gap-2">
               {patents.map((patent, index) => (
                 <div key={index} className="card rounded-lg shadow-md bg-gray-100 p-2 hover:bg-gray-300">{patent}</div>
