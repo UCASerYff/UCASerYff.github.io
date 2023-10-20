@@ -47,15 +47,15 @@ function App() {
   ];
 
 
-  // const academicAchievements = [
-  //    {
-  //      title: 'Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS, Frontiers in Psychology',
-  //      image: paper_pic_1,
-  //      description: 'We develop an evaluation model of CPL based on prospect theory, probabilistic linguistic ordered weighted distance measure, and the TOPSIS method, wherein we use a probabilistic linguistic term set (PLTS) to describe the uncertainty and complexity of the assessment process.',
-  //      paperLink: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1152333/full',
-  //      code: 'https://github.com/UCASerYff'
-  //    },
-  // ];
+  const academicAchievements = [
+     {
+       title: 'Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS, Frontiers in Psychology',
+       image: paper_pic_1,
+       description: 'We develop an evaluation model of CPL based on prospect theory, probabilistic linguistic ordered weighted distance measure, and the TOPSIS method, wherein we use a probabilistic linguistic term set (PLTS) to describe the uncertainty and complexity of the assessment process.',
+       paperLink: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1152333/full',
+       code: 'https://github.com/UCASerYff'
+     },
+  ];
 
   const papers = [
     '[1] Gao X, Yu F. Research on National Education System Based on Bayesian Back Propagation[C]//2021 International Conference on Education, Information Management and Service Science (EIMSS). IEEE, 2021: 244-248.',
