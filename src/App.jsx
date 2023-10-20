@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import avatar from './assets/avatar.jpg'; // 使用require或import导入图片
-import paper_pic_1 from './assets/avatar.png';
+import paper_pic_1 from './assets/paper_pic_1.png';
 // import paper_pic_2 from './assets/avatar.png';
 import img_github from './assets/github.svg';
 import img_twitter from './assets/twitter.svg';
