@@ -172,7 +172,7 @@ function App() {
               ))}
             </div>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">发明专利</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">专利授权</h2>
             <div className="grid grid-cols-1 gap-2">
               {patents.map((patent, index) => (
                 <div key={index} className="card rounded-lg shadow-md bg-gray-100 p-2 hover:bg-gray-300">{patent}</div>
