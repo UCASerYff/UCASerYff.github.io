@@ -17,7 +17,7 @@ function App() {
     location: '浙江 中国',
     school: '中国科学院大学',
     github: 'https://github.com/UCASerYff',
-    //twitter: 'https://twitter.com/xxx',
+    twitter: 'https://twitter.com/YuMouren65403',
     csdn: 'https://blog.csdn.net/zxcjdsb?spm=1000.2115.3001.5343',
     googleScholar: 'https://scholar.google.com/citations?hl=zh-CN&pli=1&user=VXT8Uv4AAAAJ',
 
@@ -120,7 +120,7 @@ function App() {
               <div className='flex flex-row justify-center mt-4'>
                 <a href={personalInfo.googleScholar} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_google_scholar} alt='scholar'/></a>
                 <a href={personalInfo.github} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_github} alt='github'/></a>
-                {/* <a href={personalInfo.twitter} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_twitter} alt='twitter'/></a>*/}
+                <a href={personalInfo.twitter} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_twitter} alt='twitter'/></a>
                 <a href={personalInfo.csdn} target="_blank"><img className="w-6 h-6 mx-1 hover:shadow-lg" src={img_csdn} alt='csdn'/></a>
               </div>
             </div>
