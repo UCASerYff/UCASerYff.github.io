@@ -62,8 +62,8 @@ function App() {
     '[2] Zhang E, Yu F, Jiang T, et al. Common prosperity level evaluation: A comprehensive method based on probabilistic linguistic ordered weighted distance measure, prospect theory, and TOPSIS[J]. Frontiers in Psychology, 2023, 14: 1152333.',
     '[3] Yu F, Wang J, Chen X. Evaluating RNN and Its Improved Models for Lithium Battery SoH and BRL Prediction[C]//Chinese Intelligent Systems Conference. Singapore: Springer Nature Singapore, 2023: 221-230.',
     '[4] Chen T, Chen X, Yu F, et al. MQB-RRT*: An Improved Path Planning Algorithm Based on Improving Initial Solution and Fast Convergence[C]//Chinese Intelligent Systems Conference. Singapore: Springer Nature Singapore, 2023: 17-26.',
-    '[5] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States. (ICANDVC2023录用)',
-    '[6] Xu F, Qiu J, Chen X, Lin Y, Yu F. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC. (ICANDVC2023录用)',
+    '[5] Yu F, Cong W, Chen X, et al. Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing Amidst High Sea States[C]//The International Conference on Applied Nonlinear Dynamics, Vibration and Control. Singapore: Springer Nature Singapore, 2023: 820-830.',
+    '[6] Yu F R, Zou J, Chen X, Y Lin, F Yu. Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC[C]//The International Conference on Applied Nonlinear Dynamics, Vibration and Control. Singapore: Springer Nature Singapore, 2023: 831-842.',
     '[7] Kong R, Wang Z, Yu F*. Application of Probabilistic Linguistic Term Sets and Prospect Theory in Multi-Attribute Decision Making: Aviation Industry Evaluation. (EERMR2024录用)',
   ];
 
