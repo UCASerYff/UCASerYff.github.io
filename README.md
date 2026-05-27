@@ -4,7 +4,7 @@ This is a pure static GitHub Pages homepage. It is designed for a `username.gith
 
 ## Before publishing
 
-1. Replace the placeholders in `index.html`: name, affiliation, location, email, GitHub, Google Scholar, ORCID, and research summary.
+1. Review the public profile fields in `index.html`: name, affiliation, location, email, GitHub, Google Scholar, and research summary.
 2. Review every publication, patent, award, and project entry for public accuracy.
 3. Keep the local material folders out of Git. The `.gitignore` intentionally excludes private PDFs, certificates, project books, and source archives.
 4. Push only the public site files to the GitHub Pages repository.
@@ -13,4 +13,4 @@ This is a pure static GitHub Pages homepage. It is designed for a `username.gith
 
 - `index.html`: single-page academic CV homepage.
 - `styles.css`: responsive visual design.
-- `assets/profile-placeholder.svg`: replace with a public profile photo or academic avatar if desired.
+- `assets/profile.jpg`: public profile photo used on the homepage.

@@ -185,6 +185,7 @@ h3 {
 .profile-panel,
 .interest,
 .two-column article,
+.honors-grid article,
 .timeline article,
 .contact-section,
 .pub-list li {
@@ -199,9 +200,10 @@ h3 {
 
 .profile-panel img {
   display: block;
-  width: 168px;
-  height: 168px;
+  width: 176px;
+  height: auto;
   margin: 0 auto 24px;
+  border-radius: var(--radius);
 }
 
 .profile-panel dl {
@@ -246,6 +248,7 @@ h3 {
 
 .interest,
 .two-column article,
+.honors-grid article,
 .timeline article {
   padding: 22px;
 }
@@ -291,6 +294,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.honors-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 760px;
 }
 
 .compact-list {
@@ -372,6 +381,7 @@ h3 {
   .hero,
   .interest-grid,
   .two-column,
+  .honors-grid,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -383,7 +393,7 @@ h3 {
 
   .profile-panel {
     display: grid;
-    grid-template-columns: 168px minmax(0, 1fr);
+    grid-template-columns: 176px minmax(0, 1fr);
     gap: 24px;
     align-items: center;
   }
