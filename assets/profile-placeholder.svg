@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="336" height="336" viewBox="0 0 336 336" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">A clean academic profile placeholder with initials.</desc>
+  <rect width="336" height="336" rx="24" fill="#e5f3f2"/>
+  <circle cx="168" cy="132" r="56" fill="#ffffff"/>
+  <path d="M72 284c14-58 54-88 96-88s82 30 96 88" fill="#ffffff"/>
+  <circle cx="168" cy="132" r="47" fill="#0b6b71" opacity="0.14"/>
+  <path d="M91 258c20-39 47-58 77-58s57 19 77 58" fill="#0b6b71" opacity="0.14"/>
+  <text x="168" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#064d52">YOUR NAME</text>
+</svg>

@@ -1,0 +1,32 @@
+.DS_Store
+
+# Local private/source material packs. The public website uses summaries only.
+1_论文打包/
+2_专利打包/
+3_奖学金打包/
+4_竞赛打包/
+5_证书打包/
+6_项目书/
+产出中/
+
+# Avoid accidentally publishing private source documents.
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.csv
+*.mat
+*.pth
+*.slx
+*.mldatx
+*.slxc
+
+# Local editor and build artifacts.
+.vscode/
+.idea/
+node_modules/
+dist/
+build/
