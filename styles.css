@@ -270,10 +270,33 @@ h3 {
 
 .pub-list li {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 42px 112px minmax(0, 1fr);
+  gap: 14px;
   align-items: start;
-  padding: 14px 16px;
+  padding: 16px;
+}
+
+.pub-number {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+.pub-title {
+  color: var(--ink);
+  display: block;
+  font-weight: 680;
+  line-height: 1.5;
+}
+
+.pub-meta {
+  color: var(--muted);
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin-top: 4px;
 }
 
 .tag {
@@ -430,10 +453,23 @@ h3 {
     margin: 0 auto;
   }
 
-  .pub-list li,
   .contact-list li {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+
+  .pub-list li {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 8px 12px;
+  }
+
+  .pub-list .tag {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .pub-list li > div {
+    grid-column: 1 / -1;
   }
 
   .contact-section {
