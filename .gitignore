@@ -30,3 +30,7 @@
 node_modules/
 dist/
 build/
+
+# Local deployment credentials. Never publish these.
+.github-pages-deploy-key
+.github-pages-deploy-key.pub
