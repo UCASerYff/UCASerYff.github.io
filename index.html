@@ -8,17 +8,29 @@
       content="Personal academic homepage for research in aircraft hybrid-electric propulsion, UAV systems, energy management, machine learning, and intelligent control."
     >
     <title>Feifan Yu | Academic Homepage</title>
-    <link rel="stylesheet" href="styles.css?v=20261111-refine">
+    <link rel="stylesheet" href="styles.css?v=20261111-pages">
+    <script>
+      (function () {
+        var pages = {
+          publications: "publications.html",
+          patents: "patents.html",
+          projects: "projects.html",
+          honors: "honors.html"
+        };
+        var page = pages[(location.hash || "").slice(1)];
+        if (page) location.replace(page);
+      })();
+    </script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to top">Feifan Yu</a>
+      <a class="brand" href="index.html">Feifan Yu</a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#patents">Patents</a>
-        <a href="#projects">Projects</a>
-        <a href="#honors">Honors</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="patents.html">Patents</a>
+        <a href="projects.html">Projects</a>
+        <a href="honors.html">Honors</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -78,128 +90,16 @@
         </div>
       </section>
 
-      <section id="publications" class="section">
+      <section class="section">
         <div class="section-heading">
           <p class="eyebrow">Publications</p>
           <h2>Selected Papers</h2>
-          <p>Publication records are organized from the Feishu results table and the provided publication summary screenshots.</p>
         </div>
-        <ol class="pub-list">
-          <li><span class="pub-number">01</span><span class="tag">RL</span><div><span class="pub-title">Eco-Friendly Energy Management Strategy for Turbo-Electric eVTOLs: Coupling Fuel Economy, Battery Health and Life-Cycle Emissions via Improved TD3.</span><span class="pub-meta">Applied Energy 412, 127724. 工程技术TOP; EI检索; SCI升级版 工程技术1区; SCI基础版 工程技术1区.</span></div></li>
-          <li><span class="pub-number">02</span><span class="tag">RL</span><div><span class="pub-title">Hierarchical Energy Management for Turbo-Electric eVTOL via Multi-Constraint Safe-TD3 and Power Electronic Stability Control.</span><span class="pub-meta">Aerospace Science and Technology, 112319. 工程技术TOP; EI检索; SCI升级版 工程技术1区; SCI基础版 工程技术2区.</span></div></li>
-          <li><span class="pub-number">03</span><span class="tag">CV</span><div><span class="pub-title">Iterative Generation of Accurate Displacement Fields Across Multiple Scales in Digital Image Correlation.</span><span class="pub-meta">Optics and Lasers in Engineering 199, 109565. EI检索; SCI升级版 工程技术2区; SCI基础版 工程技术2区.</span></div></li>
-          <li><span class="pub-number">04</span><span class="tag">RL</span><div><span class="pub-title">Fault-Resilient Flat-Top Current Control for Large-Scale Electromagnetic Forming Using Staged-DQN.</span><span class="pub-meta">Applied Sciences 16 (5), 2478. EI检索; SCI升级版 综合性期刊4区; SCI基础版 工程技术3区.</span></div></li>
-          <li><span class="pub-number">05</span><span class="tag">CV</span><div><span class="pub-title">SAQ-YOLO: An Efficient Small Object Detection Model for Unmanned Aerial Vehicle in Maritime Search and Rescue.</span><span class="pub-meta">Applied Sciences 16 (1), 131. EI检索; SCI升级版 综合性期刊4区; SCI基础版 工程技术3区.</span></div></li>
-          <li><span class="pub-number">06</span><span class="tag">System</span><div><span class="pub-title">Multienergy Management Control Schedule Design Method for Parallel Hybrid Electric Turbofan Engine under Different Flight Conditions.</span><span class="pub-meta">Journal of Aerospace Engineering 39 (1), 04025105. EI检索; SCI升级版 工程技术4区; SCI基础版 工程技术4区.</span></div></li>
-          <li><span class="pub-number">07</span><span class="tag">CV</span><div><span class="pub-title">DGFNet: Deformable Attention and Flow-Guided Feature Learning for Fine-Grained Surface Defect Segmentation.</span><span class="pub-meta">Journal of Intelligent Manufacturing, 1-17. EI检索; SCI升级版 工程技术2区; SCI基础版 工程技术2区.</span></div></li>
-          <li><span class="pub-number">08</span><span class="tag">RL</span><div><span class="pub-title">An Intelligent Energy Management Strategy for Fuel Cell Hybrid eVTOLs Based on TD3.</span><span class="pub-meta">Chinese Intelligent Systems Conference, 153-161.</span></div></li>
-          <li><span class="pub-number">09</span><span class="tag">ML</span><div><span class="pub-title">A Non-Sequential Flight Power Prediction Model Based on Machine Learning.</span><span class="pub-meta">The International Conference on Applied Nonlinear Dynamics, Vibration and Control.</span></div></li>
-          <li><span class="pub-number">10</span><span class="tag">System</span><div><span class="pub-title">A Review of Hybrid-Electric Propulsion in Aviation: Modeling Methods, Energy Management Strategies, and Future Prospects.</span><span class="pub-meta">Aerospace 12 (10), 895. EI检索; SCI升级版 工程技术3区; SCI基础版 工程技术4区.</span></div></li>
-          <li><span class="pub-number">11</span><span class="tag">CV</span><div><span class="pub-title">A Geometric Distortion Correction Method for UAV Projection in Non-Planar Scenarios.</span><span class="pub-meta">Aerospace 12 (10), 870. EI检索; SCI升级版 工程技术3区; SCI基础版 工程技术4区.</span></div></li>
-          <li><span class="pub-number">12</span><span class="tag">Agent</span><div><span class="pub-title">AgentBuilder: Automating Agent Creation via Large Language Model-Driven Systems.</span><span class="pub-meta">Neurocomputing 646, 130476. EI检索; SCI升级版 计算机科学2区; SCI基础版 工程技术2区.</span></div></li>
-          <li><span class="pub-number">13</span><span class="tag">Optimization</span><div><span class="pub-title">An Offline Multi-objective Energy Management Strategy for Turbo-electric Hybrid Propulsion System Using Few Computational Time.</span><span class="pub-meta">International Conference on Modelling, Identification and Control, 327-337.</span></div></li>
-          <li><span class="pub-number">14</span><span class="tag">RL</span><div><span class="pub-title">Deep Reinforcement Learning Based Energy Management Strategy for Vertical Take-Off and Landing Aircraft with Turbo-Electric Hybrid Propulsion System.</span><span class="pub-meta">Aerospace 12 (4), 355. EI检索; SCI升级版 工程技术3区; SCI基础版 工程技术4区.</span></div></li>
-          <li><span class="pub-number">15</span><span class="tag">CV</span><div><span class="pub-title">A Relative Attitude Detection Method for Unmanned Aerial Vehicles Based on You Only Look Once Framework.</span><span class="pub-meta">Aerospace 12 (3), 191. EI检索; SCI升级版 工程技术3区; SCI基础版 工程技术4区.</span></div></li>
-          <li><span class="pub-number">16</span><span class="tag">Optimization</span><div><span class="pub-title">An Improved Pied Kingfisher Optimizer for Maritime UAV Path Planning.</span><span class="pub-meta">Applied Sciences 14 (24), 11816. EI检索; SCI升级版 综合性期刊4区; SCI基础版 工程技术3区.</span></div></li>
-          <li><span class="pub-number">17</span><span class="tag">ML</span><div><span class="pub-title">Real-Time Fuel Consumption Prediction for Aircraft Turbo-Electric Hybrid Propulsion System Using Machine Learning and Deep Learning Methods.</span><span class="pub-meta">The International Conference on Applied Nonlinear Dynamics, Vibration and Control.</span></div></li>
-          <li><span class="pub-number">18</span><span class="tag">CV</span><div><span class="pub-title">Improved You Only Look Once Model for UAVs/Ships Relative Attitude Detection.</span><span class="pub-meta">Chinese Intelligent Systems Conference, 218-226.</span></div></li>
-          <li><span class="pub-number">19</span><span class="tag">CV</span><div><span class="pub-title">FVSI-YOLO: A Full-View Ship Identification and Tracking Method for Drones.</span><span class="pub-meta">Chinese Intelligent Systems Conference, 503-510.</span></div></li>
-          <li><span class="pub-number">20</span><span class="tag">ML</span><div><span class="pub-title">The Method of Aircraft Strapdown Inertial Navigation Calibration Based on PSO-LSTM Network.</span><span class="pub-meta">International Conference on Guidance, Navigation and Control, 517-528.</span></div></li>
-          <li><span class="pub-number">21</span><span class="tag">ML</span><div><span class="pub-title">Harnessing LSTM for Nonlinear Ship Deck Motion Prediction in UAV Autonomous Landing amidst High Sea States.</span><span class="pub-meta">The International Conference on Applied Nonlinear Dynamics, Vibration and Control.</span></div></li>
-          <li><span class="pub-number">22</span><span class="tag">Control</span><div><span class="pub-title">Aircraft Anti-Skid Braking Nonlinear Control Based on ADRC.</span><span class="pub-meta">The International Conference on Applied Nonlinear Dynamics, Vibration and Control.</span></div></li>
-          <li><span class="pub-number">23</span><span class="tag">ML</span><div><span class="pub-title">Evaluating RNN and Its Improved Models for Lithium Battery SOH and BRL Prediction.</span><span class="pub-meta">Chinese Intelligent Systems Conference, 221-230.</span></div></li>
-          <li><span class="pub-number">24</span><span class="tag">Optimization</span><div><span class="pub-title">MQB-RRT*: An Improved Path Planning Algorithm Based on Improving Initial Solution and Fast Convergence.</span><span class="pub-meta">Proceedings of 2023 Chinese Intelligent Systems Conference: Volume II 2, 17.</span></div></li>
-          <li><span class="pub-number">25</span><span class="tag">Decision</span><div><span class="pub-title">Common Prosperity Level Evaluation: A Comprehensive Method Based on Probabilistic Linguistic Ordered Weighted Distance Measure, Prospect Theory, and TOPSIS.</span><span class="pub-meta">Frontiers in Psychology 14, 1152333. SCI升级版 心理学3区.</span></div></li>
-          <li><span class="pub-number">26</span><span class="tag">ML</span><div><span class="pub-title">Research on National Education System Based on Bayesian Back Propagation.</span><span class="pub-meta">2021 International Conference on Education, Information Management and Service Science (EIMSS), 244-248.</span></div></li>
-          <li><span class="pub-number">27</span><span class="tag">Decision</span><div><span class="pub-title">Application of Probabilistic Linguistic Term Sets and Prospect Theory in Multi-Attribute Decision Making: Aviation Industry Evaluation.</span><span class="pub-meta">Highlights in Business, Economics and Management 25, 6-14.</span></div></li>
-          <li><span class="pub-number">28</span><span class="tag">System</span><div><span class="pub-title">一种涡电混合动力无人机双层能量管理方法.</span><span class="pub-meta">航天控制 44 (2), 75-82. CSCD 扩展库.</span></div></li>
-        </ol>
-      </section>
-
-      <section id="patents" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Intellectual Property</p>
-          <h2>Patents and Software Copyrights</h2>
-        </div>
-        <div class="two-column">
-          <article>
-            <h3>Patents</h3>
-            <div class="patent-group">
-              <h4>Invention Patents</h4>
-              <ul class="compact-list">
-                <li>集成化轴瓦喷涂工艺设备及加工方法</li>
-                <li>适用于轴瓦的三维抓取机构及方法</li>
-                <li>一种用于航空混合动力系统的能量管理方法及系统</li>
-                <li>电机参数推理辨识的可验证性对齐优化方法和相关装置</li>
-              </ul>
-            </div>
-            <div class="patent-group">
-              <h4>Utility Model Patents</h4>
-              <ul class="compact-list">
-                <li>适用于多种尺寸磁控轴瓦的夹具机构</li>
-                <li>适用于轴瓦的三维抓取机构</li>
-                <li>轴瓦夹取紧固装置</li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <h3>Software Copyrights</h3>
-            <ul class="compact-list">
-              <li>自动化设备控制调整辅助管理软件 V1</li>
-              <li>基于大数据的网络安全管理系统 V1</li>
-              <li>机械运转控制信息化平台 V1</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Project Experience</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <span class="tag">System</span>
-            <h3>Long-endurance low-altitude aircraft hybrid energy power system</h3>
-            <p>Feasibility research and technical proposal work for hybrid propulsion architecture, eVTOL energy management, power prediction, system validation, and UAV perception/autonomy studies.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="honors" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Honors</p>
-          <h2>Awards and Service</h2>
-        </div>
-        <div class="honors-grid">
-          <article>
-            <h3>Awards</h3>
-            <ul class="compact-list">
-              <li>2021 年美国大学生数学建模竞赛（ICM）Meritorious Winner 奖（国际一等奖）</li>
-              <li>2023 年中国国际“互联网+”大学生创新创业大赛 国银奖</li>
-              <li>2021 年“挑战杯”大学生课外学术科技作品竞赛 浙江省一等奖</li>
-              <li>2020 年“东风日产杯”清华 IE 亮剑全国工业工程应用案例大赛 三等奖</li>
-              <li>2021 年全国大学生数学建模竞赛 浙江省二等奖</li>
-              <li>2026 年中国人工智能应用创新大赛 全国总决赛一等奖</li>
-              <li>2025 年中国人工智能应用创新大赛 全国总决赛一等奖</li>
-              <li>共参与国家级及省级学科竞赛并获奖 14 项</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Service</h3>
-            <ul class="compact-list">
-              <li>2021-2022 年任华为 HSD2021 年度华为耀星校园大使</li>
-              <li>2020-2021 年任西门子中国智能制造挑战赛中国西部大使</li>
-              <li>2023-2024 年中国人工智能学会学生会员</li>
-              <li>2024-2025 年 IEEE student member</li>
-              <li>担任 Applied Energy 期刊审稿人</li>
-              <li>担任 Engineering Applications of Artificial Intelligence 期刊审稿人</li>
-              <li>担任 Frontiers in Marine Science 期刊审稿人</li>
-              <li>担任 Energies 期刊审稿人</li>
-            </ul>
-          </article>
-        </div>
+        <ul class="compact-list">
+          <li><a href="publications.html">Eco-Friendly Energy Management Strategy for Turbo-Electric eVTOLs: Coupling Fuel Economy, Battery Health and Life-Cycle Emissions via Improved TD3.</a></li>
+          <li><a href="publications.html">Hierarchical Energy Management for Turbo-Electric eVTOL via Multi-Constraint Safe-TD3 and Power Electronic Stability Control.</a></li>
+          <li><a href="publications.html">Iterative Generation of Accurate Displacement Fields Across Multiple Scales in Digital Image Correlation.</a></li>
+        </ul>
       </section>
 
       <section id="contact" class="section contact-section">
@@ -220,7 +120,14 @@
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Feifan Yu. Built for GitHub Pages.</p>
+      <div>
+        <p>© 2026 Feifan Yu. Built for GitHub Pages.</p>
+        <p class="footer-links">
+          <a href="mailto:yufeifan@nimte.ac.cn">Email</a>
+          <a href="https://github.com/UCASerYff">GitHub</a>
+          <a href="https://scholar.google.com.hk/citations?user=VXT8Uv4AAAAJ&amp;hl=zh-CN&amp;authuser=1">Scholar</a>
+        </p>
+      </div>
       <p>Public page summary only. Original certificates and private materials are not published.</p>
     </footer>
   </body>
