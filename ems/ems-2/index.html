@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EMS-2: Eco-friendly energy management strategy for turbo-electric eVTOLs: Coupling fuel economy, battery health and life-cycle emissions via improved TD3. Applied Energy 412 (2026) 127724.">
+    <title>EMS-2 · Eco-friendly energy management strategy for turbo-electric e… | Feifan Yu</title>
+    <link rel="stylesheet" href="../../styles.css?v=20261111-refine">
+    <link rel="stylesheet" href="../ems.css?v=20261112b">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../">Feifan Yu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a>
+        <a href="../">Series</a>
+        <a href="../ems-0/">EMS-0</a>
+        <a href="../ems-1/">EMS-1</a>
+        <a href="../ems-2/" aria-current="page">EMS-2</a>
+        <a href="../ems-3/">EMS-3</a>
+      </nav>
+    </header>
+
+    <main id="top" class="paper-page">
+      <nav class="breadcrumb section" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span aria-hidden="true">/</span><a href="../">EMS</a><span aria-hidden="true">/</span><span aria-current="page">EMS-2</span>
+      </nav>
+
+      <section class="section paper-hero">
+        <p class="eyebrow">EMS-2 · Article · 2026</p>
+        <h1 class="paper-title" lang="en">Eco-friendly energy management strategy for turbo-electric eVTOLs: Coupling fuel economy, battery health and life-cycle emissions via improved TD3</h1>
+        <p class="cn-title">涡轮电 eVTOL 的环保型能量管理：以改进 TD3 耦合燃油经济性、电池健康与全生命周期排放<span class="cn-hint">（中文意译）</span></p>
+        <p class="paper-authors" lang="en">Feifan Yu, Jiajie Chen<sup>*</sup>, Sichen Li, Ting Jiang, Tengzhao Zhang, Xiaokang Sun, Jiqiang Wang<sup>**</sup></p>
+        <p class="paper-cite" lang="en"><sup>*</sup>, <sup>**</sup> Corresponding authors.</p>
+        <p class="paper-cite" lang="en"><em>Applied Energy</em> 412 (2026) 127724 <br>Received 17 December 2025 · Revised 2 March 2026 · Accepted 13 March 2026</p>
+        <p class="paper-actions"><a href="https://doi.org/10.1016/j.apenergy.2026.127724">DOI: 10.1016/j.apenergy.2026.127724</a></p>
+        <p class="paper-keywords" lang="en"><span>Keywords</span> Energy management strategy; Deep reinforcement learning; Turbo-electric hybrid systems; Multi-objective optimization</p>
+        <nav class="page-toc" aria-label="On this page">
+          <a href="#abstract">摘要</a><a href="#overview">简要介绍</a><a href="#figures">混动与模型图（2）</a><a href="#results">主要结果</a><a href="#source">引用与版权</a>
+        </nav>
+      </section>
+
+      <section id="abstract" class="section">
+        <div class="section-heading"><p class="eyebrow">Abstract</p><h2>摘要</h2></div>
+        <p class="abstract-text" lang="en">To achieve sustainable and green aerospace propulsion, energy management strategies (EMS) must evolve beyond simple fuel efficiency to address the synergistic optimization of battery health and life-cycle emissions. This paper proposes an eco-friendly multi-objective EMS for turbo-electric hybrid eVTOLs. A unified optimization framework is established to couple conflicting objectives—fuel economy, battery State-of-Health (SOH), and environmental impact. To solve this complex continuous control problem, an improved Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm is developed, incorporating a pyramidal feature extraction structure and state-machine-guided priors to filter noise and accelerate convergence. Simulation results demonstrate that the proposed strategy improves energy economy by 4% over rule-based methods and approaches the global optimum (Dynamic Programming) within a 0.91% margin. Furthermore, Hardware-in-the-Loop (HIL) validation confirms real-time feasibility on embedded avionics with an inference latency under 5.5 ms, proving its potential for deployment in sustainable urban air mobility.</p>
+        <h3 class="sub-h">Highlights</h3>
+        <ul class="highlights" lang="en"><li>Eco-friendly EMS couples fuel economy, battery SOH, and life-cycle emissions.</li><li>Improved TD3 integrates pyramidal networks and priors to stabilize continuous control.</li><li>Gradient balancing mechanism ensures robust weighting of conflicting objectives.</li><li>Hardware-in-the-Loop tests confirm real-time feasibility with &lt; 5.5 ms latency.</li><li>Proposed strategy achieves near-optimal performance within 0.91% of Dynamic Programming.</li></ul>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading"><p class="eyebrow">Overview</p><h2>简要介绍</h2></div>
+        <div class="prose">
+          <p>绿色航空推进要求能量管理不只盯着燃油，还要同时照顾电池健康和全生命周期排放。论文面向 500 kg 级涡轮电混动 eVTOL，在统一的深度强化学习闭环中耦合燃油经济性、电池 SOH（半经验老化模型）和生命周期排放（基于 ReCiPe 2016），并通过权重/梯度平衡，避免短期燃油信号压过长期的电池保护激励。</p>
+          <p>算法上提出改进 TD3（TD3-IPRES-SM）：Actor 与 Critic 采用金字塔形（锥形）特征提取网络，并加入残差–投影结构，用于滤除高频噪声、稳定梯度；同时把状态机先验嵌入动作裁剪，剪除物理上不可行的动作区间，把探索限制在可行边界之内。</p>
+          <p>论文与 DP、状态机规则策略以及 TD3、DDPG、PPO、SAC、DQN 等主流方法进行比较，开展消融、权重敏感性和鲁棒性分析；并把训练好的策略部署到嵌入式 Linux 控制器上，与 Speedgoat 实时仿真机组成硬件在环（HIL）系统，对比数字仿真与 HIL 的轨迹。</p>
+        </div>
+      </section>
+
+      <section id="figures" class="section">
+        <div class="section-heading"><p class="eyebrow">Figures</p><h2>混动构型与模型图</h2>
+          <p>本页只展示混动构型图和模型框图，不展示实验结果图表；完整内容见正式出版论文（<a href="https://doi.org/10.1016/j.apenergy.2026.127724">DOI: 10.1016/j.apenergy.2026.127724</a>）。图片截取自已发表论文，图题保留原文英文，下附简短中文说明，点击可查看原图。</p></div>
+        <h3 class="fig-group">混动构型</h3>
+          <figure class="fig" id="fig-1">
+            <a class="fig-media" href="../figures/ems-2/ems-2-fig1.webp" title="查看原图"><img src="../figures/ems-2/ems-2-fig1.webp" width="1867" height="767" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-2 Fig. 1. eVTOL hybrid system and flight envelope."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Fig. 1.</strong> eVTOL hybrid system and flight envelope.</p>
+              <p class="fig-note">涡轮电混动 eVTOL 推进系统组成与海上救援任务飞行包线。</p>
+              <p class="fig-src">Reproduced from F. Yu, J. Chen, S. Li, T. Jiang, T. Zhang, X. Sun, J. Wang, <em>Applied Energy</em> 412 (2026) 127724. <a href="https://doi.org/10.1016/j.apenergy.2026.127724">https://doi.org/10.1016/j.apenergy.2026.127724</a>. © 2026 Elsevier Ltd. All rights reserved. Shown on the first author’s academic homepage.</p>
+            </figcaption>
+          </figure>
+        <h3 class="fig-group">系统与方法模型</h3>
+          <figure class="fig" id="fig-5">
+            <a class="fig-media" href="../figures/ems-2/ems-2-fig5.webp" title="查看原图"><img src="../figures/ems-2/ems-2-fig5.webp" width="1865" height="1144" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-2 Fig. 5. Flowchart of algorithm improvement."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Fig. 5.</strong> Flowchart of algorithm improvement.</p>
+              <p class="fig-note">改进 TD3 框架：状态机动作裁剪，以及带残差连接的锥形 Actor/Critic 网络。</p>
+              <p class="fig-src">Reproduced from F. Yu, J. Chen, S. Li, T. Jiang, T. Zhang, X. Sun, J. Wang, <em>Applied Energy</em> 412 (2026) 127724. <a href="https://doi.org/10.1016/j.apenergy.2026.127724">https://doi.org/10.1016/j.apenergy.2026.127724</a>. © 2026 Elsevier Ltd. All rights reserved. Shown on the first author’s academic homepage.</p>
+            </figcaption>
+          </figure>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-heading"><p class="eyebrow">Reported Results</p><h2>论文中报告的主要结果</h2></div>
+        <ul class="highlights results-list">
+          <li>摘要报告：相对规则策略，能量经济性提高 4%，与全局最优（DP）的差距在 0.91% 以内；结论部分另报告综合奖励提高 2.1%。</li>
+          <li>燃油消耗 <i>W</i><sub>f</sub>：TD3-IPRES-SM 50.058 kg，DP 49.598 kg，DP-SM 49.696 kg，规则策略 SM 52.152 kg（原文表 3）。</li>
+          <li>HIL 与数字仿真结果高度一致：<i>W</i><sub>f</sub> 分别为 50.055 kg 和 50.058 kg，综合奖励分别为 −496.584 和 −496.395（原文表 6）。</li>
+          <li>论文报告的 HIL 测试中，单个控制周期的决策耗时低于 5.5 ms（原文图 16 标注：N = 349，均值 4.111 ms，中位数 3.705 ms）。</li>
+        </ul>
+        <p class="note hil-note">以上 HIL 数据均为论文发表时报告的历史实验结果，本页只做展示，不连接任何实时硬件。</p>
+      </section>
+
+      <section id="source" class="section">
+        <div class="section-heading"><p class="eyebrow">Citation &amp; Rights</p><h2>引用与版权</h2></div>
+        <p class="cite-block" lang="en">F. Yu, J. Chen, S. Li, T. Jiang, T. Zhang, X. Sun, J. Wang, <em>Applied Energy</em> 412 (2026) 127724. Eco-friendly energy management strategy for turbo-electric eVTOLs: Coupling fuel economy, battery health and life-cycle emissions via improved TD3. <a href="https://doi.org/10.1016/j.apenergy.2026.127724">https://doi.org/10.1016/j.apenergy.2026.127724</a></p>
+        <p class="note">本文由 Elsevier 出版，版权归出版社所有。本页图片在作者个人学术主页上展示并注明出处，不提供全文；全文请通过 DOI 访问正式出版版本。本页数字均来自原论文，是对已发表结果的展示，不是新的实验或比较。</p>
+        <p class="note">本页仅展示混动构型图和模型框图（图 1, 5），不收录实验结果图表；实验结果、表格及完整内容请见 <a href="https://doi.org/10.1016/j.apenergy.2026.127724">正式出版论文</a>。</p>
+      </section>
+
+      <nav class="section prev-next" aria-label="Series navigation">
+        <a class="pn prev" href="../ems-1/"><span>← 上一篇</span>EMS-1 · 涡轮电混动垂直起降飞行器的深度强化学习能量管理</a>
+        <a class="pn next" href="../ems-3/"><span>下一篇 →</span>EMS-3 · 基于多约束 Safe-TD3 与电力电子稳定控制的涡轮电 eVTOL 分层能量管理</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Feifan Yu. Part of the academic homepage.</p>
+      <p>Published-paper showcase only. Figures are reproduced from the published papers with attribution.</p>
+    </footer>
+  </body>
+</html>
