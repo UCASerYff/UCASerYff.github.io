@@ -401,6 +401,21 @@ h3 {
   font-size: 0.88rem;
   font-weight: 650;
   line-height: 1.38;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.pub-title:visited {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+a.pub-title:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, currentColor 48%, transparent);
+  text-underline-offset: 0.18em;
 }
 
 .pub-meta {
