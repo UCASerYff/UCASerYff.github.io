@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Published papers in Feifan Yu&#x27;s energy-management series for turbo-electric hybrid aircraft: EMS-0 to EMS-3.">
+    <title>EMS Series | Feifan Yu</title>
+    <link rel="stylesheet" href="../styles.css?v=20261111-refine">
+    <link rel="stylesheet" href="ems.css?v=20261112b">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../">Feifan Yu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Series</a>
+        <a href="./ems-0/">EMS-0</a>
+        <a href="./ems-1/">EMS-1</a>
+        <a href="./ems-2/">EMS-2</a>
+        <a href="./ems-3/">EMS-3</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero ems-hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Research Series</p>
+          <h1>航空涡轮电混动系统能量管理 <span>Energy Management for Turbo-Electric Hybrid Aircraft</span></h1>
+          <p class="role">已发表论文展示 · EMS-0 至 EMS-3</p>
+        </div>
+        <p class="summary">
+          本页汇集该系列已经发表的四篇论文，每篇另有详细介绍页，包含摘要、中文简介、混动构型与模型图，以及论文中报告的主要结果。
+          尚未发表的后续工作暂不收录，发表后再补入。本站只做内容展示，不是仿真平台，也不提供算法运行或数据下载。
+        </p>
+      </section>
+
+      <section id="series" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>系列脉络</h2>
+          <p>四篇论文沿同一主线推进：先综述航空混合电推进的构型、建模与能量管理方法；再以涡轮电混动垂直起降飞行器为对象，依次研究先验知识引导的深度强化学习、兼顾电池健康与生命周期排放的多目标能量管理，以及带安全约束、并考虑电力电子稳定性的分层能量管理。</p>
+        </div>
+        <ol class="series-map">
+          <li><a href="ems-0/"><p class="eyebrow">EMS-0 · 2025</p><h3>综述与研究背景</h3><p>构型、建模方法与三类能量管理策略，以及后续关键技术。</p></a></li>
+          <li><a href="ems-1/"><p class="eyebrow">EMS-1 · 2025</p><h3>先验知识引导的 DRL</h3><p>PKG-DDPG：领域先验与前景理论融入奖励设计。</p></a></li>
+          <li><a href="ems-2/"><p class="eyebrow">EMS-2 · 2026</p><h3>多目标环保能量管理</h3><p>改进 TD3 耦合燃油、电池 SOH 与生命周期排放。</p></a></li>
+          <li><a href="ems-3/"><p class="eyebrow">EMS-3 · 2026</p><h3>安全约束与分层控制</h3><p>Safe-TD3 上层决策 + 电力电子稳定控制下层。</p></a></li>
+        </ol>
+      </section>
+
+      <section id="papers" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>已发表论文</h2>
+          <p>每篇给出简要介绍，点击“详细介绍”进入该论文的详细页面。文中数字均来自原论文。</p>
+        </div>
+        <div class="paper-cards">
+        <article class="paper-card" id="ems-0">
+          <a class="card-thumb" href="ems-0/" tabindex="-1" aria-hidden="true">
+            <img src="figures/ems-0/ems-0-thumb.webp" width="720" height="180" loading="lazy" decoding="async" alt="">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">EMS-0 · Review · 2025</p>
+            <h3><a href="ems-0/">综述：航空混合电推进的建模方法、能量管理策略与未来展望</a></h3>
+            <p class="card-en" lang="en">A Review of Hybrid-Electric Propulsion in Aviation: Modeling Methods, Energy Management Strategies, and Future Prospects</p>
+            <p class="card-text">系列的综述与研究背景。文章从系统开发的实际环节出发，梳理航空混合电推进的构型、系统级与部件级建模方法，以及规则类、优化类、学习类三类能量管理策略，并提出功率需求预测、多时间尺度控制和热–能耦合管理三个后续重点方向。</p>
+            <p class="paper-cite" lang="en"><em>Aerospace</em> 2025, 12, 895 <span class="badge">Open access</span></p>
+            <p class="paper-actions"><a class="more" href="ems-0/">详细介绍 →</a><a href="https://doi.org/10.3390/aerospace12100895">DOI: 10.3390/aerospace12100895</a></p>
+            <p class="thumb-src">缩略图：EMS-0 Figure 1，© 2025 the authors, CC BY 4.0</p>
+          </div>
+        </article>
+        <article class="paper-card" id="ems-1">
+          <a class="card-thumb" href="ems-1/" tabindex="-1" aria-hidden="true">
+            <img src="figures/ems-1/ems-1-thumb.webp" width="720" height="310" loading="lazy" decoding="async" alt="">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">EMS-1 · Article · 2025</p>
+            <h3><a href="ems-1/">涡轮电混动垂直起降飞行器的深度强化学习能量管理</a></h3>
+            <p class="card-en" lang="en">Deep Reinforcement Learning Based Energy Management Strategy for Vertical Take-Off and Landing Aircraft with Turbo-Electric Hybrid Propulsion System</p>
+            <p class="card-text">面向涡轮电混动垂直起降飞行器，提出先验知识引导的深度强化学习方法（PKG-DDPG），把领域先验和前景理论引入 DDPG，缩小探索空间、加快收敛。论文报告其燃油经济性与离线 DP 基准仅差 1.6%，前景理论模块使燃油经济性提高 0.81%。</p>
+            <p class="paper-cite" lang="en"><em>Aerospace</em> 2025, 12, 355 <span class="badge">Open access</span></p>
+            <p class="paper-actions"><a class="more" href="ems-1/">详细介绍 →</a><a href="https://doi.org/10.3390/aerospace12040355">DOI: 10.3390/aerospace12040355</a></p>
+            <p class="thumb-src">缩略图：EMS-1 Figure 7，© 2025 the authors, CC BY 4.0</p>
+          </div>
+        </article>
+        <article class="paper-card" id="ems-2">
+          <a class="card-thumb" href="ems-2/" tabindex="-1" aria-hidden="true">
+            <img src="figures/ems-2/ems-2-thumb.webp" width="720" height="442" loading="lazy" decoding="async" alt="">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">EMS-2 · Article · 2026</p>
+            <h3><a href="ems-2/">涡轮电 eVTOL 的环保型能量管理：以改进 TD3 耦合燃油经济性、电池健康与全生命周期排放</a></h3>
+            <p class="card-en" lang="en">Eco-friendly energy management strategy for turbo-electric eVTOLs: Coupling fuel economy, battery health and life-cycle emissions via improved TD3</p>
+            <p class="card-text">把能量管理目标从单一燃油扩展到燃油经济性、电池健康（SOH）和全生命周期排放三者耦合，提出带金字塔特征提取和状态机先验的改进 TD3。论文报告：能量经济性比规则策略提高 4%，与 DP 相差 0.91% 以内；硬件在环测试中推理时延低于 5.5 ms。</p>
+            <p class="paper-cite" lang="en"><em>Applied Energy</em> 412 (2026) 127724 </p>
+            <p class="paper-actions"><a class="more" href="ems-2/">详细介绍 →</a><a href="https://doi.org/10.1016/j.apenergy.2026.127724">DOI: 10.1016/j.apenergy.2026.127724</a></p>
+            <p class="thumb-src">缩略图：EMS-2 Fig. 5，© 2026 Elsevier Ltd.</p>
+          </div>
+        </article>
+        <article class="paper-card" id="ems-3">
+          <a class="card-thumb" href="ems-3/" tabindex="-1" aria-hidden="true">
+            <img src="figures/ems-3/ems-3-thumb.webp" width="720" height="582" loading="lazy" decoding="async" alt="">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">EMS-3 · Article · 2026</p>
+            <h3><a href="ems-3/">基于多约束 Safe-TD3 与电力电子稳定控制的涡轮电 eVTOL 分层能量管理</a></h3>
+            <p class="card-en" lang="en">Hierarchical energy management for turbo-electric eVTOL via multi-constraint safe-TD3 and power electronic stability control</p>
+            <p class="card-text">提出主从分层的安全能量管理框架：上层 Safe-TD3 以风险门控、拉格朗日软约束、修正即模仿和状态自适应探索四个机制保证安全；下层用含 AC/DC、DC/DC 变换器的物理模型检验母线电压稳定。论文报告：与 DP 仅差 0.20%，零样本泛化损失 0.06%，嵌入式推理时延低于 8 ms。</p>
+            <p class="paper-cite" lang="en"><em>Aerospace Science and Technology</em> 177 (2026) 112319 </p>
+            <p class="paper-actions"><a class="more" href="ems-3/">详细介绍 →</a><a href="https://doi.org/10.1016/j.ast.2026.112319">DOI: 10.1016/j.ast.2026.112319</a></p>
+            <p class="thumb-src">缩略图：EMS-3 Fig. 4，© 2026 Elsevier Masson SAS</p>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section id="scope" class="section">
+        <div class="section-heading"><p class="eyebrow">Scope</p><h2>本站范围</h2></div>
+        <p class="note">
+          本站只收录已经发表的 EMS-0 至 EMS-3。页面中的混动构型图和模型框图截取自原论文并逐一注明出处，不展示实验结果图表：EMS-0、EMS-1 为 MDPI 开放获取论文（CC BY 4.0）；EMS-2、EMS-3 由 Elsevier 出版，版权归出版社所有，本站只在作者个人学术主页上展示并链接 DOI，不提供出版社全文。
+          论文中的硬件在环（HIL）数据是发表时的历史实验结果，本站不连接任何实时硬件。后续工作发表后再补入。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Feifan Yu. Part of the academic homepage.</p>
+      <p>Published-paper showcase only. Figures are reproduced from the published papers with attribution.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EMS-1: Deep Reinforcement Learning Based Energy Management Strategy for Vertical Take-Off and Landing Aircraft with Turbo-Electric Hybrid Propulsion System. Aerospace 2025, 12, 355.">
+    <title>EMS-1 · Deep Reinforcement Learning Based Energy Management Strategy… | Feifan Yu</title>
+    <link rel="stylesheet" href="../../styles.css?v=20261111-refine">
+    <link rel="stylesheet" href="../ems.css?v=20261112b">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../">Feifan Yu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a>
+        <a href="../">Series</a>
+        <a href="../ems-0/">EMS-0</a>
+        <a href="../ems-1/" aria-current="page">EMS-1</a>
+        <a href="../ems-2/">EMS-2</a>
+        <a href="../ems-3/">EMS-3</a>
+      </nav>
+    </header>
+
+    <main id="top" class="paper-page">
+      <nav class="breadcrumb section" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span aria-hidden="true">/</span><a href="../">EMS</a><span aria-hidden="true">/</span><span aria-current="page">EMS-1</span>
+      </nav>
+
+      <section class="section paper-hero">
+        <p class="eyebrow">EMS-1 · Article · 2025</p>
+        <h1 class="paper-title" lang="en">Deep Reinforcement Learning Based Energy Management Strategy for Vertical Take-Off and Landing Aircraft with Turbo-Electric Hybrid Propulsion System</h1>
+        <p class="cn-title">涡轮电混动垂直起降飞行器的深度强化学习能量管理<span class="cn-hint">（中文意译）</span></p>
+        <p class="paper-authors" lang="en">Feifan Yu<sup>†</sup>, Wang Tang<sup>†</sup>, Jiajie Chen<sup>*</sup>, Jiqiang Wang<sup>*</sup>, Xiaokang Sun, Xinmin Chen</p>
+        <p class="paper-cite" lang="en"><sup>†</sup> These authors contributed equally to this work. <sup>*</sup> Corresponding authors.</p>
+        <p class="paper-cite" lang="en"><em>Aerospace</em> 2025, 12, 355 <span class="badge">Open access · CC BY 4.0</span><br>Received 24 March 2025 · Revised 14 April 2025 · Accepted 15 April 2025 · Published 17 April 2025</p>
+        <p class="paper-actions"><a href="https://doi.org/10.3390/aerospace12040355">DOI: 10.3390/aerospace12040355</a> <a href="https://www.mdpi.com/2226-4310/12/4/355">Publisher page</a> <a href="https://www.mdpi.com/2226-4310/12/4/355/pdf">Official PDF</a></p>
+        <p class="paper-keywords" lang="en"><span>Keywords</span> deep reinforcement learning; energy management strategy; vertical take-off and landing; turbo-electric hybrid propulsion system; prior knowledge</p>
+        <nav class="page-toc" aria-label="On this page">
+          <a href="#abstract">摘要</a><a href="#overview">简要介绍</a><a href="#figures">混动与模型图（4）</a><a href="#results">主要结果</a><a href="#source">引用与版权</a>
+        </nav>
+      </section>
+
+      <section id="abstract" class="section">
+        <div class="section-heading"><p class="eyebrow">Abstract</p><h2>摘要</h2></div>
+        <p class="abstract-text" lang="en">Due to the limitations of pure electric power endurance, turbo-electric hybrid power systems, which offer a high power-to-weight ratio, present a reliable solution for medium- and large-sized vertical take-off and landing (VTOL) aircraft. Traditional energy management strategies often fail to minimize fuel consumption across the entire flight profile while meeting power demands under varying flight conditions. To address this issue, this paper proposes a deep reinforcement learning (DRL)-based energy management strategy (EMS) specifically designed for turbo-electric hybrid propulsion systems. Firstly, the proposed strategy employs a Prior Knowledge-Guided Deep Reinforcement Learning (PKGDRL) method, which integrates domain-specific knowledge into the Deep Deterministic Policy Gradient (DDPG) algorithm to improve learning efficiency and enhance fuel economy. Then, by narrowing the exploration space, the PKGDRL method accelerates convergence and achieves superior fuel and energy efficiency. Simulation results show that PKGDRL has a strong generalization capability in all operating conditions, with a fuel economy difference of only 1.6% from the offline benchmark of the optimization algorithm, and in addition, the PKG module enables the DRL method to achieve a huge improvement in terms of fuel economy and convergence rate. In particular, the prospect theory (PT) in the PKG module improves fuel economy by 0.81%. Future research will explore the application of PKGDRL in the direction of real-time total power prediction and adaptive energy management under complex operating conditions to enhance the generalization capability of EMS.</p>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading"><p class="eyebrow">Overview</p><h2>简要介绍</h2></div>
+        <div class="prose">
+          <p>纯电推进受续航限制，涡轮电混合动力具有较高的功重比，是中大型垂直起降飞行器的可行方案。但传统能量管理策略很难在满足各飞行阶段功率需求的同时，使全剖面燃油消耗最小。</p>
+          <p>论文以 500 kg 级涡轮电混动 VTOL 为对象，建立了包含涡轴发动机–发电机、电池和电力电子变换器的系统模型，并用 LightGBM 构建实时油耗预测模块（原文表 3 中 RMSE 最低）。在此基础上提出先验知识引导的深度强化学习（PKGDRL）能量管理策略：以 DDPG 为基础，把 SoC 范围、能量储备、充放电状态切换和系统约束四类先验知识（PK1–PK4），以及前景理论（PT）引入奖励设计，缩小探索空间、加快收敛。</p>
+          <p>论文在完整飞行剖面上与规则策略和动态规划（DP）比较，通过消融实验检验各先验项与前景理论的作用，并在不同初始 SoC 和不同巡航时长的飞行剖面下检验策略的泛化性与鲁棒性。</p>
+        </div>
+      </section>
+
+      <section id="figures" class="section">
+        <div class="section-heading"><p class="eyebrow">Figures</p><h2>混动构型与模型图</h2>
+          <p>本页只展示混动构型图和模型框图，不展示实验结果图表；完整内容见正式出版论文（<a href="https://doi.org/10.3390/aerospace12040355">DOI: 10.3390/aerospace12040355</a>）。图片截取自已发表论文，图题保留原文英文，下附简短中文说明，点击可查看原图。</p></div>
+        <h3 class="fig-group">混动构型</h3>
+          <figure class="fig" id="fig-2">
+            <a class="fig-media" href="../figures/ems-1/ems-1-fig2.webp" title="查看原图"><img src="../figures/ems-1/ems-1-fig2.webp" width="1825" height="1229" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-1 Figure 2. Ideal power source for distributed electric aircraft: turbo-electric hybrid propulsion system."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 2.</strong> Ideal power source for distributed electric aircraft: turbo-electric hybrid propulsion system.</p>
+              <p class="fig-note">涡轮电混合推进系统组成：涡轴发动机–发电机、电池、能量管理系统与分布式电推进单元。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Tang, W.; Chen, J.; Wang, J.; Sun, X.; Chen, X. <em>Aerospace</em> 2025, 12, 355. <a href="https://doi.org/10.3390/aerospace12040355">https://doi.org/10.3390/aerospace12040355</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+        <h3 class="fig-group">系统与方法模型</h3>
+          <figure class="fig" id="fig-6">
+            <a class="fig-media" href="../figures/ems-1/ems-1-fig6.webp" title="查看原图"><img src="../figures/ems-1/ems-1-fig6.webp" width="1800" height="889" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-1 Figure 6. Flowchart of model operation."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 6.</strong> Flowchart of model operation.</p>
+              <p class="fig-note">模型运行流程，包括功率分配与各项限制条件的检查。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Tang, W.; Chen, J.; Wang, J.; Sun, X.; Chen, X. <em>Aerospace</em> 2025, 12, 355. <a href="https://doi.org/10.3390/aerospace12040355">https://doi.org/10.3390/aerospace12040355</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-7">
+            <a class="fig-media" href="../figures/ems-1/ems-1-fig7.webp" title="查看原图"><img src="../figures/ems-1/ems-1-fig7.webp" width="1837" height="791" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-1 Figure 7. Agent–environment interaction for hVTOL energy management."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 7.</strong> Agent–environment interaction for hVTOL energy management.</p>
+              <p class="fig-note">智能体–环境交互：状态、先验知识（K1–K4）、前景理论与奖励函数的组织方式。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Tang, W.; Chen, J.; Wang, J.; Sun, X.; Chen, X. <em>Aerospace</em> 2025, 12, 355. <a href="https://doi.org/10.3390/aerospace12040355">https://doi.org/10.3390/aerospace12040355</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-8">
+            <a class="fig-media" href="../figures/ems-1/ems-1-fig8.webp" title="查看原图"><img src="../figures/ems-1/ems-1-fig8.webp" width="1828" height="673" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-1 Figure 8. The architecture of the actor–critic network."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 8.</strong> The architecture of the actor–critic network.</p>
+              <p class="fig-note">Actor–Critic 网络结构。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Tang, W.; Chen, J.; Wang, J.; Sun, X.; Chen, X. <em>Aerospace</em> 2025, 12, 355. <a href="https://doi.org/10.3390/aerospace12040355">https://doi.org/10.3390/aerospace12040355</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-heading"><p class="eyebrow">Reported Results</p><h2>论文中报告的主要结果</h2></div>
+        <ul class="highlights results-list">
+          <li>燃油消耗：PKG-DDPG 50.662 kg，规则策略 53.651 kg，DP 49.832 kg（原文表 6）；论文报告其燃油经济性与离线 DP 基准仅差 1.6%。</li>
+          <li>前景理论（PT）使燃油经济性提高 0.81%：有 PT 时 50.662 kg，无 PT 时 51.072 kg（原文表 7）。</li>
+          <li>消融实验中，去掉任一先验项（PK1–PK4），DDPG 都无法得到有效解（原文表 7）。</li>
+          <li>油耗预测模块中，LightGBM 的 RMSE 为 0.027041，在五种方法中最低（原文表 3）。</li>
+          <li>在不同初始 SoC（0.85–0.95）和三种飞行剖面下，SoC 曲线形态保持稳定一致（原文图 18、图 19）。</li>
+        </ul>
+      </section>
+
+      <section id="source" class="section">
+        <div class="section-heading"><p class="eyebrow">Citation &amp; Rights</p><h2>引用与版权</h2></div>
+        <p class="cite-block" lang="en">Yu, F.; Tang, W.; Chen, J.; Wang, J.; Sun, X.; Chen, X. <em>Aerospace</em> 2025, 12, 355. Deep Reinforcement Learning Based Energy Management Strategy for Vertical Take-Off and Landing Aircraft with Turbo-Electric Hybrid Propulsion System. <a href="https://doi.org/10.3390/aerospace12040355">https://doi.org/10.3390/aerospace12040355</a></p>
+        <p class="note">本文为 MDPI 开放获取论文，采用 CC BY 4.0 许可；本页图片依该许可注明出处后转载，全文请见期刊官方页面。本页数字均来自原论文，是对已发表结果的展示，不是新的实验或比较。</p>
+        <p class="note">本页仅展示混动构型图和模型框图（图 2, 6, 7, 8），不收录实验结果图表；实验结果、表格及完整内容请见 <a href="https://doi.org/10.3390/aerospace12040355">正式出版论文</a>。</p>
+      </section>
+
+      <nav class="section prev-next" aria-label="Series navigation">
+        <a class="pn prev" href="../ems-0/"><span>← 上一篇</span>EMS-0 · 综述：航空混合电推进的建模方法、能量管理策略与未来展望</a>
+        <a class="pn next" href="../ems-2/"><span>下一篇 →</span>EMS-2 · 涡轮电 eVTOL 的环保型能量管理：以改进 TD3 耦合燃油经济性、电池健康与全生命周期排放</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Feifan Yu. Part of the academic homepage.</p>
+      <p>Published-paper showcase only. Figures are reproduced from the published papers with attribution.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EMS-0: A Review of Hybrid-Electric Propulsion in Aviation: Modeling Methods, Energy Management Strategies, and Future Prospects. Aerospace 2025, 12, 895.">
+    <title>EMS-0 · A Review of Hybrid-Electric Propulsion in Aviation: Modeling… | Feifan Yu</title>
+    <link rel="stylesheet" href="../../styles.css?v=20261111-refine">
+    <link rel="stylesheet" href="../ems.css?v=20261112b">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../">Feifan Yu</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../">Home</a>
+        <a href="../">Series</a>
+        <a href="../ems-0/" aria-current="page">EMS-0</a>
+        <a href="../ems-1/">EMS-1</a>
+        <a href="../ems-2/">EMS-2</a>
+        <a href="../ems-3/">EMS-3</a>
+      </nav>
+    </header>
+
+    <main id="top" class="paper-page">
+      <nav class="breadcrumb section" aria-label="Breadcrumb">
+        <a href="../../">Home</a><span aria-hidden="true">/</span><a href="../">EMS</a><span aria-hidden="true">/</span><span aria-current="page">EMS-0</span>
+      </nav>
+
+      <section class="section paper-hero">
+        <p class="eyebrow">EMS-0 · Review · 2025</p>
+        <h1 class="paper-title" lang="en">A Review of Hybrid-Electric Propulsion in Aviation: Modeling Methods, Energy Management Strategies, and Future Prospects</h1>
+        <p class="cn-title">综述：航空混合电推进的建模方法、能量管理策略与未来展望<span class="cn-hint">（中文意译）</span></p>
+        <p class="paper-authors" lang="en">Feifan Yu, Jiajie Chen<sup>*</sup>, Panao Gao, Yu Kong, Xiaokang Sun, Jiqiang Wang<sup>*</sup>, Xinmin Chen</p>
+        <p class="paper-cite" lang="en"><sup>*</sup> Corresponding authors.</p>
+        <p class="paper-cite" lang="en"><em>Aerospace</em> 2025, 12, 895 <span class="badge">Open access · CC BY 4.0</span><br>Received 8 September 2025 · Revised 25 September 2025 · Accepted 30 September 2025 · Published 3 October 2025</p>
+        <p class="paper-actions"><a href="https://doi.org/10.3390/aerospace12100895">DOI: 10.3390/aerospace12100895</a> <a href="https://www.mdpi.com/2226-4310/12/10/895">Publisher page</a> <a href="https://www.mdpi.com/2226-4310/12/10/895/pdf">Official PDF</a></p>
+        <p class="paper-keywords" lang="en"><span>Keywords</span> hybrid-electric propulsion; long-endurance eVTOLs; modeling; energy management</p>
+        <nav class="page-toc" aria-label="On this page">
+          <a href="#abstract">摘要</a><a href="#overview">简要介绍</a><a href="#figures">混动与模型图（6）</a><a href="#results">主要结果</a><a href="#source">引用与版权</a>
+        </nav>
+      </section>
+
+      <section id="abstract" class="section">
+        <div class="section-heading"><p class="eyebrow">Abstract</p><h2>摘要</h2></div>
+        <p class="abstract-text" lang="en">Aviation is under increasing pressure to reduce carbon emissions in conventional transports and support the growth of low-altitude operations such as long-endurance eVTOLs. Hybrid-electric propulsion addresses these challenges by integrating the high specific energy of fuels or hydrogen with the controllability and efficiency of electrified powertrains. At present, the field of hybrid-electric aircraft is developing rapidly. To systematically study hybrid-electric propulsion control in aviation, this review focuses on practical aspects of system development, including propulsion architectures, system- and component-level modeling approaches, and energy management strategies. Key technologies in the future are examined, with emphasis on aircraft power-demand prediction, multi-timescale control, and thermal integrated energy management. This review aims to serve as a reference for configuration design, modeling and control simulation, as well as energy management strategy design of hybrid-electric propulsion systems. Building on this reference role, the review presents a coherent guidance scheme from architectures through modeling to energy-management control, with a practical roadmap toward flight-ready deployment.</p>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading"><p class="eyebrow">Overview</p><h2>简要介绍</h2></div>
+        <div class="prose">
+          <p>这篇综述是整个系列的研究背景。面对常规运输航空的减碳压力，以及长航时 eVTOL 等低空应用的发展需求，文章从系统开发的实际环节出发，把航空混合电推进分成“构型—建模—能量管理控制”三个层次进行梳理。</p>
+          <p>构型部分比较了油–电混动、氢–电混动，以及串联、并联、串并联三类架构，并汇总了典型混动项目的构型与部件性能（原文表 1、原文表 2）。建模部分区分了适合快速方案权衡和控制器原型开发的系统级功率流模型，以及用于识别运行边界、电–热瓶颈和适航相关动态的物理机理模型，并对锂离子电池模型进行了分类（原文表 3；本页图 7）。</p>
+          <p>能量管理部分按三条主线展开：确定性规则与模糊规则等规则类方法；DP、PMP、GA/PSO 等全局优化和 ECMS、MPC 等实时优化方法；以及以 DQN、DDPG 为代表的强化学习方法。文章比较了各类方法的优缺点（原文表 5），并按构型梳理了它们在航空混动系统中的应用进展（原文表 7、原文图 20）。</p>
+          <p>展望部分提出三个优先方向：高精度、低延迟的推进功率需求预测；协调慢速能量分配与快速电气调节的分层多时间尺度能量管理；以及发动机、电机和电力电子之间的热–能耦合管理。结论建议，在近期面向适航的能量管理基线中，学习类方法宜以辅助（advisory）角色使用。</p>
+        </div>
+      </section>
+
+      <section id="figures" class="section">
+        <div class="section-heading"><p class="eyebrow">Figures</p><h2>混动构型与模型图</h2>
+          <p>本页只展示混动构型图和模型框图，不展示实验结果图表；完整内容见正式出版论文（<a href="https://doi.org/10.3390/aerospace12100895">DOI: 10.3390/aerospace12100895</a>）。图片截取自已发表论文，图题保留原文英文，下附简短中文说明，点击可查看原图。</p></div>
+        <h3 class="fig-group">混动构型</h3>
+          <figure class="fig" id="fig-1">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig1.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig1.webp" width="1888" height="471" style="max-width:900px" loading="lazy" decoding="async" alt="EMS-0 Figure 1. Oil–battery hybrid. (Abbreviations and elements. AC–DC: rectifier; DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Aeroengine: gas-turbine prime mover; Generator: engine-driven electrical generator; Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Oil-battery hybrid power system: combination of aeroengine and battery; Arrows denote nominal power-flow direction)."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 1.</strong> Oil–battery hybrid. (Abbreviations and elements. AC–DC: rectifier; DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Aeroengine: gas-turbine prime mover; Generator: engine-driven electrical generator; Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Oil-battery hybrid power system: combination of aeroengine and battery; Arrows denote nominal power-flow direction).</p>
+              <p class="fig-note">油–电混动：发动机经发电机、整流器接入直流母线，电池经 DC–DC 并网，母线驱动多个电机–螺旋桨单元。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-2">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig2.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig2.webp" width="1622" height="522" style="max-width:811px" loading="lazy" decoding="async" alt="EMS-0 Figure 2. Hydrogen–battery hybrid. (Abbreviations and elements. DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Aeroengine: gas-turbine prime mover; Generator: engine-driven electrical generator; Li-ion Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Energy Storage System (ESS): combination of Fuel-cell stack (FC) and Li-ion battery interfaced via DC–DC; Arrows denote nominal power-flow direction)."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 2.</strong> Hydrogen–battery hybrid. (Abbreviations and elements. DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Aeroengine: gas-turbine prime mover; Generator: engine-driven electrical generator; Li-ion Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Energy Storage System (ESS): combination of Fuel-cell stack (FC) and Li-ion battery interfaced via DC–DC; Arrows denote nominal power-flow direction).</p>
+              <p class="fig-note">氢–电混动：燃料电池与锂电池经 DC–DC 接入公共直流母线。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-5">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig5.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig5.webp" width="1410" height="882" style="max-width:705px" loading="lazy" decoding="async" alt="EMS-0 Figure 5. Parallel Hybrid System Configuration. (a) Parallel hybrid turbofan configuration; (b) Parallel hybrid turboshaft configuration."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 5.</strong> Parallel Hybrid System Configuration. (a) Parallel hybrid turbofan configuration; (b) Parallel hybrid turboshaft configuration.</p>
+              <p class="fig-note">并联混动的涡扇 (a) 与涡轴 (b) 两种构型。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-6">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig6.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig6.webp" width="1546" height="669" style="max-width:773px" loading="lazy" decoding="async" alt="EMS-0 Figure 6. Series-Parallel Hybrid System Configuration. (Abbreviations and elements. AC–DC: rectifier; DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Generator: engine-driven electrical generator; Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Arrows denote nominal power-flow direction)."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 6.</strong> Series-Parallel Hybrid System Configuration. (Abbreviations and elements. AC–DC: rectifier; DC–DC: DC converter; DC–AC: inverter; DC bus: common high-voltage DC link. Generator: engine-driven electrical generator; Battery: Li-ion pack with BMS; Distributed Propulsion System: multiple motor–inverter–propeller units sharing the DC bus. Dots: quantity; Arrows denote nominal power-flow direction).</p>
+              <p class="fig-note">串并联混动：涡扇直接产生推力，同时带动发电机向分布式推进系统供电。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+        <h3 class="fig-group">系统与方法模型</h3>
+          <figure class="fig" id="fig-7">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig7.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig7.webp" width="1232" height="623" style="max-width:616px" loading="lazy" decoding="async" alt="EMS-0 Figure 7. Classification of Lithium-Ion Battery Modeling."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 7.</strong> Classification of Lithium-Ion Battery Modeling.</p>
+              <p class="fig-note">锂离子电池模型分为电化学模型、等效电路模型和数据驱动模型三类。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" id="fig-8">
+            <a class="fig-media" href="../figures/ems-0/ems-0-fig8.webp" title="查看原图"><img src="../figures/ems-0/ems-0-fig8.webp" width="1362" height="794" style="max-width:681px" loading="lazy" decoding="async" alt="EMS-0 Figure 8. EMS framework."></a>
+            <figcaption>
+              <p class="fig-cap"><strong>Figure 8.</strong> EMS framework.</p>
+              <p class="fig-note">能量管理系统的基本框架：以飞行包线为状态、控制策略为动作、优化目标为奖励。</p>
+              <p class="fig-src">Reproduced from Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a>. © 2025 by the authors, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+            </figcaption>
+          </figure>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-heading"><p class="eyebrow">Reported Results</p><h2>论文主要结论</h2></div>
+        <ul class="highlights results-list">
+          <li>规则类方法（确定性规则、模糊规则）鲁棒、适合低算力航电，但在复杂、时变的任务中容易饱和。</li>
+          <li>优化类方法可以提供基准最优解（DP/PMP）和近优的实时策略（ECMS/MPC），前提是模型和预测足够准确。</li>
+          <li>学习类控制器，特别是安全强化学习，在不确定条件下的适应潜力较大；前提是使用有代表性的任务数据训练、施加安全约束，并通过高保真模型和试验验证。</li>
+          <li>近期研究宜优先考虑并联和串并联构型；串联、涡轮电和分布式方案将随标准和热裕度成熟而逐步可行。</li>
+          <li>后续三项关键技术：推进功率实时预测、多时间尺度能量管理与控制、热–能耦合管理。</li>
+        </ul>
+      </section>
+
+      <section id="source" class="section">
+        <div class="section-heading"><p class="eyebrow">Citation &amp; Rights</p><h2>引用与版权</h2></div>
+        <p class="cite-block" lang="en">Yu, F.; Chen, J.; Gao, P.; Kong, Y.; Sun, X.; Wang, J.; Chen, X. <em>Aerospace</em> 2025, 12, 895. A Review of Hybrid-Electric Propulsion in Aviation: Modeling Methods, Energy Management Strategies, and Future Prospects. <a href="https://doi.org/10.3390/aerospace12100895">https://doi.org/10.3390/aerospace12100895</a></p>
+        <p class="note">本文为 MDPI 开放获取论文，采用 CC BY 4.0 许可；本页图片依该许可注明出处后转载，全文请见期刊官方页面。本页数字均来自原论文，是对已发表结果的展示，不是新的实验或比较。</p>
+        <p class="note">本页仅展示混动构型图和模型框图（图 1, 2, 5, 6, 7, 8），不收录实验结果图表；实验结果、表格及完整内容请见 <a href="https://doi.org/10.3390/aerospace12100895">正式出版论文</a>。</p>
+      </section>
+
+      <nav class="section prev-next" aria-label="Series navigation">
+        <span></span>
+        <a class="pn next" href="../ems-1/"><span>下一篇 →</span>EMS-1 · 涡轮电混动垂直起降飞行器的深度强化学习能量管理</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Feifan Yu. Part of the academic homepage.</p>
+      <p>Published-paper showcase only. Figures are reproduced from the published papers with attribution.</p>
+    </footer>
+  </body>
+</html>
