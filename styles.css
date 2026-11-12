@@ -487,6 +487,64 @@ h3 {
   margin-top: 3px;
 }
 
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dev-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 12px;
+}
+
+.dev-head h3 {
+  margin: 0;
+  min-width: 0;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.dev-head h3 a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.dev-head h3 a:hover {
+  color: var(--accent-strong);
+  border-bottom-color: currentColor;
+}
+
+.dev-grid p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.dev-source {
+  flex: none;
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 40%, transparent);
+}
+
+.dev-source:hover {
+  color: var(--accent-strong);
+  border-bottom-color: currentColor;
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(240px, 0.9fr);
@@ -596,6 +654,26 @@ h3 {
   }
 }
 
+@media (max-width: 720px) {
+  :root {
+    --header: 66px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 560px) {
   .section {
     width: min(100% - 28px, var(--max));
@@ -613,14 +691,20 @@ h3 {
 
   .site-nav {
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 0;
   }
 
   .site-nav a {
     font-size: 0.72rem;
     letter-spacing: 0;
+  }
+
+  .dev-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .hero {
@@ -668,6 +752,12 @@ h3 {
     gap: 4px;
     padding-left: 14px;
     padding-right: 14px;
+  }
+}
+
+@media (max-width: 476px) {
+  :root {
+    --header: 84px;
   }
 }
 
