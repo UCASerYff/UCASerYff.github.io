@@ -355,7 +355,11 @@ h3 {
   line-height: 1.45;
 }
 
+/* One shared tag track, sized to the longest pill, so every title starts together. */
 .pub-list {
+  display: grid;
+  grid-template-columns: 1.7rem max-content minmax(0, 1fr);
+  column-gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -364,8 +368,8 @@ h3 {
 
 .pub-list li {
   display: grid;
-  grid-template-columns: 1.7rem max-content minmax(0, 1fr);
-  column-gap: 10px;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
   align-items: start;
   margin: 0 -8px;
   padding: 6px 8px 7px;
@@ -652,9 +656,12 @@ h3 {
     gap: 6px;
   }
 
-  .pub-list li {
-    grid-template-columns: 1.45rem auto minmax(0, 1fr);
+  .pub-list {
+    grid-template-columns: 1.45rem max-content minmax(0, 1fr);
     column-gap: 6px;
+  }
+
+  .pub-list li {
     margin: 0 -4px;
     padding: 6px 4px;
   }
