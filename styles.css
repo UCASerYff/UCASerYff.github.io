@@ -412,6 +412,64 @@ h3 {
   line-height: 1.4;
 }
 
+/* Indexing pills: quartile sets the color; TOP, EI, and CSCD each have their own. */
+.idx-pill {
+  display: inline-block;
+  margin: 1px 0 1px 0.38em;
+  padding: 0 0.5em;
+  border: 1px solid var(--idx-border);
+  border-radius: 999px;
+  background: var(--idx-fill);
+  color: var(--idx-ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: 0.05em;
+}
+
+.idx-top {
+  --idx-border: #b4334c;
+  --idx-fill: #fbecef;
+  --idx-ink: #7a1830;
+}
+
+.idx-q1 {
+  --idx-border: #946c0e;
+  --idx-fill: #fbf4e3;
+  --idx-ink: #6e4a09;
+}
+
+.idx-q2 {
+  --idx-border: #1f7a72;
+  --idx-fill: #e7f4f2;
+  --idx-ink: #0e5c56;
+}
+
+.idx-q3 {
+  --idx-border: #6d5b96;
+  --idx-fill: #f1eef6;
+  --idx-ink: #433868;
+}
+
+.idx-q4 {
+  --idx-border: #7d7366;
+  --idx-fill: #f4f1ec;
+  --idx-ink: #5c5348;
+}
+
+.idx-ei {
+  --idx-border: #2f6ea3;
+  --idx-fill: #e8f1f8;
+  --idx-ink: #1a4570;
+}
+
+.idx-cscd {
+  --idx-border: #6a754e;
+  --idx-fill: #f2f4eb;
+  --idx-ink: #4a5336;
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
@@ -716,6 +774,48 @@ h3 {
       0 0 0 4px var(--mat),
       0 0 0 5px rgba(236, 232, 226, 0.08);
   }
+
+  .idx-top {
+    --idx-border: #e7a3b1;
+    --idx-fill: #3c1e26;
+    --idx-ink: #f8d0d8;
+  }
+
+  .idx-q1 {
+    --idx-border: #e2c06a;
+    --idx-fill: #3a2c12;
+    --idx-ink: #f6e0a8;
+  }
+
+  .idx-q2 {
+    --idx-border: #7dccc4;
+    --idx-fill: #143330;
+    --idx-ink: #c5eee8;
+  }
+
+  .idx-q3 {
+    --idx-border: #c0aee0;
+    --idx-fill: #2a2438;
+    --idx-ink: #e0d4f4;
+  }
+
+  .idx-q4 {
+    --idx-border: #c4b5a4;
+    --idx-fill: #2c2824;
+    --idx-ink: #e4d9cc;
+  }
+
+  .idx-ei {
+    --idx-border: #8eb8dc;
+    --idx-fill: #1a2c3c;
+    --idx-ink: #d4e7f6;
+  }
+
+  .idx-cscd {
+    --idx-border: #b4c49a;
+    --idx-fill: #262b1e;
+    --idx-ink: #dce6c4;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -791,5 +891,47 @@ h3 {
 
   .pub-list li:hover {
     background: none;
+  }
+
+  .idx-top {
+    --idx-border: #b4334c;
+    --idx-fill: #fbecef;
+    --idx-ink: #7a1830;
+  }
+
+  .idx-q1 {
+    --idx-border: #946c0e;
+    --idx-fill: #fbf4e3;
+    --idx-ink: #6e4a09;
+  }
+
+  .idx-q2 {
+    --idx-border: #1f7a72;
+    --idx-fill: #e7f4f2;
+    --idx-ink: #0e5c56;
+  }
+
+  .idx-q3 {
+    --idx-border: #6d5b96;
+    --idx-fill: #f1eef6;
+    --idx-ink: #433868;
+  }
+
+  .idx-q4 {
+    --idx-border: #7d7366;
+    --idx-fill: #f4f1ec;
+    --idx-ink: #5c5348;
+  }
+
+  .idx-ei {
+    --idx-border: #2f6ea3;
+    --idx-fill: #e8f1f8;
+    --idx-ink: #1a4570;
+  }
+
+  .idx-cscd {
+    --idx-border: #6a754e;
+    --idx-fill: #f2f4eb;
+    --idx-ink: #4a5336;
   }
 }
