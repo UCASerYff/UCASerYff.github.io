@@ -549,6 +549,43 @@ h3 {
   margin-top: 3px;
 }
 
+.project-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 12px;
+  row-gap: 2px;
+  min-width: 0;
+}
+
+.project-head h3 {
+  flex: 0 1 auto;
+  min-width: min(100%, 16rem);
+  max-width: 100%;
+}
+
+.project-link {
+  flex: none;
+  color: var(--faint);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 40%, transparent);
+}
+
+.project-link:visited {
+  color: var(--faint);
+}
+
+.project-link:hover {
+  color: var(--accent-strong);
+  border-bottom-color: currentColor;
+}
+
 .dev-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
